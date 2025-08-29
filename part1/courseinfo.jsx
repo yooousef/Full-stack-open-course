@@ -1,3 +1,5 @@
+// Solving 1.1 and 1.2 exercises.
+
 const Header = (props) => {
   return <h1>{props.course}</h1>
 }
