@@ -13,8 +13,8 @@ const App = () => {
   const addNewName = (event) => {
     event.preventDefault()
     const nameObject = { name: newName }
-    const valid = (persons.map(person => person.name === nameObject.name))
-    {!valid ? setPersons(persons.concat(nameObject)) : alert(`${nameObject.name} is already added to phonebook`)}
+    const exists = persons.some(person => person.name === nameObject.name)
+    {!exists ? setPersons(persons.concat(nameObject)) : alert(`${nameObject.name} is already added to phonebook`)}
     setNewName('')
   }
 
