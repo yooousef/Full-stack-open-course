@@ -1,0 +1,10 @@
+.notification {
+    color: green;
+    border: 2px green solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    transition: ease-in-out .3s;
+    background-color: #aaa;
+}
